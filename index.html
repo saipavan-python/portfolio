@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sai Pavan kumar kistamsetty — Portfolio</title>
+  <meta name="description" content="Portfolio of Sai Pavan — Python developer. Clean, modern one-page HTML/CSS site." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg:#0f1724; /* deep navy */
+      --card:#0b1220;
+      --glass: rgba(255,255,255,0.04);
+      --muted: #94a3b8;
+      --accent1: #7c3aed; /* purple */
+      --accent2: #06b6d4; /* teal */
+      --accent-gradient: linear-gradient(135deg,var(--accent1),var(--accent2));
+      --radius: 14px;
+      --maxw: 1100px;
+    }
+
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+      background: radial-gradient(1200px 600px at 10% 10%, rgba(124,58,237,0.08), transparent),
+                  radial-gradient(900px 450px at 90% 90%, rgba(6,182,212,0.06), transparent),
+                  var(--bg);
+      color:#e6eef8;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      padding:32px 20px;
+      display:flex;
+      justify-content:center;
+    }
+
+    .container{
+      width:100%;
+      max-width:var(--maxw);
+    }
+
+    header{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:16px;
+      margin-bottom:28px;
+    }
+    .brand{
+      display:flex;align-items:center;gap:12px;font-weight:700;letter-spacing:0.3px;
+    }
+    .logo{
+      width:48px;height:48px;border-radius:12px;background:var(--accent-gradient);
+      display:grid;place-items:center;font-weight:800;color:white;
+      font-family:'JetBrains Mono';box-shadow:0 8px 30px rgba(12,18,28,0.6);
+    }
+
+    nav{display:flex;gap:14px;align-items:center}
+    nav a{
+      color:var(--muted);text-decoration:none;font-weight:600;font-size:14px;
+      padding:8px 10px;border-radius:10px;
+    }
+    nav a:hover{color:white;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01))}
+
+    .hero{
+      display:grid;grid-template-columns: 1fr 420px;gap:28px;align-items:center;margin-bottom:40px;
+    }
+
+    .hero-left{
+      background: linear-gradient(180deg, rgba(255,255,255,0.01), transparent);
+      padding:28px;border-radius:var(--radius);backdrop-filter: blur(4px);
+      box-shadow: 0 10px 30px rgba(2,6,23,0.6);
+    }
+    .eyebrow{color:var(--accent2);font-weight:700;font-size:13px;margin-bottom:10px}
+    h1{font-size:34px;margin:6px 0 12px;line-height:1.02}
+    p.lead{color:var(--muted);margin:0 0 16px}
+
+    .cta{display:flex;gap:12px;margin-top:16px}
+    .btn{
+      padding:10px 16px;border-radius:12px;border:0;cursor:pointer;font-weight:700;
+      background:var(--accent-gradient);color:white;box-shadow:0 8px 24px rgba(124,58,237,0.18);
+    }
+    .btn.ghost{
+      background:transparent;
+      border:1px solid rgba(255,255,255,0.06);
+      color:var(--muted);
+      font-weight:600;
+      text-decoration:none;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+    }
+
+    /* hero-right: 3D card */
+    .card{
+      height:360px;border-radius:18px;
+      background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      position:relative;overflow:hidden;padding:22px;
+      display:flex;flex-direction:column;justify-content:space-between;
+      box-shadow:0 12px 40px rgba(2,6,23,0.6);
+      transform-style:preserve-3d;
+      transition:transform 0.15s ease-out;
+      will-change: transform;
+      transform-origin:center;
+    }
+    .card .top{display:flex;gap:12px;align-items:center}
+    .avatar{
+      width:64px;height:64px;border-radius:12px;
+      background:linear-gradient(135deg,#111827,#0b1220);
+      display:grid;place-items:center;font-weight:700
+    }
+    .small{color:var(--muted);font-size:13px}
+
+    .card .project-thumb{
+      height:170px;border-radius:12px;
+      background:linear-gradient(135deg, rgba(124,58,237,0.12), rgba(6,182,212,0.12));
+      display:flex;align-items:center;justify-content:center;flex-direction:column;font-weight:700;
+      cursor:pointer;
+    }
+    .card .info{display:flex;justify-content:space-between;gap:12px;align-items:center}
+
+    .grid{
+      display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-bottom:28px
+    }
+    .panel{background:var(--card);padding:18px;border-radius:12px}
+    .projects .project{border-radius:12px;padding:14px;background:linear-gradient(180deg, rgba(255,255,255,0.01), transparent);box-shadow:inset 0 1px 0 rgba(255,255,255,0.02)}
+    .project h3{margin:0 0 8px}
+    .tags{display:flex;gap:8px;flex-wrap:wrap}
+    .tag{padding:6px 8px;border-radius:8px;font-size:12px;background:rgba(255,255,255,0.02);color:var(--muted)}
+
+    .skill{margin-bottom:12px}
+    .bar{height:10px;background:rgba(255,255,255,0.04);border-radius:999px;overflow:hidden}
+    .bar > span{display:block;height:100%;border-radius:999px;background:linear-gradient(90deg,var(--accent1),var(--accent2));}
+
+    form input, form textarea{
+      width:100%;
+      padding:12px;
+      border-radius:10px;
+      background:transparent;
+      border:1px solid rgba(255,255,255,0.04);
+      color:inherit;font-size:14px
+    }
+    form label{display:block;margin-bottom:6px;color:var(--muted);font-size:14px}
+    form button{margin-top:8px}
+
+    footer{margin-top:22px;color:var(--muted);font-size:13px;text-align:center}
+
+    @media (max-width:980px){
+      .hero{grid-template-columns:1fr;}
+      .grid{grid-template-columns:repeat(2,1fr)}
+    }
+    @media (max-width:640px){
+      .container{padding:0 6px}
+      .grid{grid-template-columns:1fr}
+      nav{display:none}
+      h1{font-size:28px}
+      .card{height:300px}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">SP</div>
+        <div>
+          <div style="font-size:14px">Sai Pavan kumar kistamsetty</div>
+          <div style="font-size:12px;color:var(--muted);margin-top:2px">Python Developer • Backend • Learner</div>
+        </div>
+      </div>
+
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-left">
+        <div class="eyebrow">Hello — I'm</div>
+        <h1>
+          Sai Pavan — Python Developer<br>
+          <span style="color:var(--accent2);font-weight:700">Building simple, reliable backend systems</span>
+        </h1>
+        <p class="lead">
+          I’m a Python Developer focused on building clean, efficient, and scalable backend systems. I enjoy working with APIs, automation, and data handling to solve real-world problems. I love learning new tools, improving performance, and contributing to open-source projects. My goal is to keep growing as a developer and create meaningful products.
+        </p>
+
+        <div class="cta">
+          <a class="btn" href="#projects">See projects</a>
+          <a class="btn ghost" href="resume.pdf" download>Download Resume</a>
+        </div>
+
+        <div style="margin-top:18px;color:var(--muted);font-size:13px">
+          Available for freelance & remote roles • Open to collaboration
+        </div>
+      </div> 
+
+      <div class="card" id="parallaxCard" aria-hidden="false">
+        <div class="top">
+          <div class="avatar">SP</div>
+          <div>
+            <div style="font-weight:700">Sai Pavan</div>
+            <div class="small">Python • APIs • Automation</div>
+          </div>
+        </div>
+
+        <div class="project-thumb" id="projectThumb">
+          Featured Project
+          <small style="display:block;margin-top:6px;color:var(--muted)">Click to view demo</small>
+        </div>
+
+        <div class="info">
+          <div>
+            <div style="font-weight:700">Smart CLI Tool</div>
+            <div class="small">Python • argparse • file I/O</div>
+          </div>
+          <div style="text-align:right">
+            <div style="font-weight:700">2025</div>
+            <div class="small">GitHub</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="projects">
+      <h2 style="margin-bottom:12px">Projects</h2>
+
+      <div class="grid">
+        <div class="panel project">
+          <h3>ATMSimulationSystem</h3>
+          <p class="small">
+            Console-based ATM simulator with user authentication, balance check, deposit,
+            withdrawal, and transaction history.
+          </p>
+          <div class="tags" style="margin-top:10px">
+            <span class="tag">Python</span>
+            <span class="tag">CLI</span>
+          </div>
+        </div>
+
+        <div class="panel project">
+          <h3>EmployeeAttendanceManagementSystem</h3>
+          <p class="small">
+            Tracks employee attendance, auto-logs dates, generates monthly reports,
+            and exports data to CSV/Excel.
+          </p>
+          <div class="tags" style="margin-top:10px">
+            <span class="tag">Python</span>
+            <span class="tag">Excel</span>
+            <span class="tag">Automation</span>
+          </div>
+        </div>
+
+        <div class="panel project">
+          <h3>StudentResultAnalyzer</h3>
+          <p class="small">
+            Processes student marks, calculates averages, finds top performers,
+            and exports clean reports to Excel/CSV.
+          </p>
+          <div class="tags" style="margin-top:10px">
+            <span class="tag">Python</span>
+            <span class="tag">CSV</span>
+            <span class="tag">Excel</span>
+          </div>
+        </div>
+
+        <div class="panel project">
+          <h3>Multi-Function Calculator</h3>
+          <p class="small">
+            CLI-based calculator supporting arithmetic, square, square-root,
+            percentage and error-handling.
+          </p>
+          <div class="tags" style="margin-top:10px">
+            <span class="tag">Python</span>
+            <span class="tag">CLI</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" style="margin-bottom:20px">
+      <h2 style="margin-bottom:12px">Skills</h2>
+      <div class="grid" style="grid-template-columns: 1fr 1fr 1fr;">
+        <div class="panel">
+          <h3>Languages</h3>
+          <div style="margin-top:10px">
+            <div class="skill">
+              <div style="display:flex;justify-content:space-between">
+                <div>Python</div><div>90%</div>
+              </div>
+              <div class="bar"><span style="width:90%"></span></div>
+            </div>
+            <div class="skill">
+              <div style="display:flex;justify-content:space-between">
+                <div>SQL</div><div>72%</div>
+              </div>
+              <div class="bar"><span style="width:72%"></span></div>
+            </div>
+            <div class="skill">
+              <div style="display:flex;justify-content:space-between">
+                <div>HTML/CSS</div><div>85%</div>
+              </div>
+              <div class="bar"><span style="width:85%"></span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel">
+          <h3>Tools</h3>
+          <div style="margin-top:10px">
+            <div class="tags">
+              <span class="tag">Git</span>
+              <span class="tag">Docker</span>
+              <span class="tag">Postgres</span>
+            </div>
+            <div style="margin-top:10px" class="small">
+              Familiar with FastAPI, Flask, and CI workflows.
+            </div>
+          </div>
+        </div>
+
+        <div class="panel">
+          <h3>Interests</h3>
+          <p class="small">
+            Backend Development, Data Processing, Web Application Performance Optimization,
+            Data Visualization Automation, backend systems, developer tooling, open-source.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h2 style="margin-bottom:12px">Contact</h2>
+      <div class="grid" style="grid-template-columns: 1fr 320px;">
+        <div class="panel">
+          <form onsubmit="handleContact(event)">
+            <label for="name">Your name</label>
+            <input id="name" placeholder="Name" required />
+
+            <label for="email" style="margin-top:8px">Email</label>
+            <input id="email" type="email" placeholder="you@example.com" required />
+
+            <label for="message" style="margin-top:8px">Message</label>
+            <textarea id="message" rows="5" placeholder="Hi Sai, I want to..." required></textarea>
+
+            <button class="btn" type="submit">Send message</button>
+            <div id="note" style="margin-top:8px;color:var(--muted);font-size:13px">
+              This form opens your email app to send the message.
+            </div>
+          </form>
+        </div>
+
+        <div class="panel" style="display:flex;flex-direction:column;gap:10px;align-items:flex-start">
+          <div style="font-weight:700">Let's connect</div>
+
+          <div class="small">
+            Email:
+            <a id="emailLink" href="mailto:saipavankistamsetty@gmail.com" style="color:var(--accent2);text-decoration:none">
+              saipavankistamsetty@gmail.com
+            </a>
+          </div>
+
+          <div class="small">
+            GitHub:
+            <a href="https://github.com/saipavankistamsetty" target="_blank" rel="noopener" style="color:var(--accent2);text-decoration:none">
+              github.com/saipavankistamsetty
+            </a>
+          </div>
+
+          <div class="small">
+            LinkedIn:
+            <a href="https://www.linkedin.com/in/sai-pavan-kistamsetty-60a755252"
+               target="_blank"
+               rel="noopener"
+               style="color:var(--accent2);text-decoration:none">
+              www.linkedin.com/in/sai-pavan-kistamsetty-60a755252
+            </a>
+          </div>
+
+          <div class="small">
+            Phone:
+            <a href="tel:+918096327356" style="color:var(--accent2);text-decoration:none">
+              8096327356
+            </a>
+          </div>
+
+          <div style="margin-top:10px;width:100%">
+            <div style="font-weight:700;margin-bottom:6px">Availability</div>
+            <div class="small">Open to freelance & remote roles • Based in India</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Sai Pavan • Built using HTML & CSS
+    </footer>
+  </div>
+
+  <script>
+    const card = document.getElementById('parallaxCard');
+    const yearSpan = document.getElementById('year');
+    yearSpan.textContent = new Date().getFullYear();
+
+    // 3D PARALLAX EFFECT USING POINTERMOVE (LIKE BACKEND VERSION)
+    document.addEventListener('pointermove', (e) => {
+      if (!card) return;
+      const rect = card.getBoundingClientRect();
+      const cx = rect.left + rect.width / 2;
+      const cy = rect.top + rect.height / 2;
+      const dx = e.clientX - cx;
+      const dy = e.clientY - cy;
+
+      const rx = -dy / 40; // rotation x (up/down)
+      const ry =  dx / 40; // rotation y (left/right)
+
+      card.style.transform =
+        `perspective(900px) rotateX(${rx}deg) rotateY(${ry}deg) translateZ(0)`;
+    });
+
+    document.addEventListener('pointerleave', () => {
+      if (!card) return;
+      card.style.transform =
+        'perspective(900px) rotateX(0deg) rotateY(0deg) translateZ(0)';
+    });
+
+    // project card -> open ATM project
+    const thumb = document.getElementById('projectThumb');
+    if (thumb) {
+      thumb.addEventListener('click', () => {
+        window.open('https://github.com/saipavan-python/ATM-Simulator', '_blank');
+      });
+    }
+
+    function handleContact(e){
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+      const subject = encodeURIComponent(`Contact from portfolio: ${name}`);
+      const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`);
+      window.location.href =
+        `mailto:saipavankistamsetty@gmail.com?subject=${subject}&body=${body}`;
+    }
+  </script>
+</body>
+</html>
