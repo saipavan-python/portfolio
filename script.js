@@ -14,7 +14,7 @@
     root.style.colorScheme = next;
 
     if (themeColor) {
-      themeColor.setAttribute('content', next === 'light' ? '#F6F6F2' : '#09090B');
+      themeColor.setAttribute('content', next === 'light' ? '#F5F7EF' : '#071712');
     }
 
     if (themeToggle) {
