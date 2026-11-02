@@ -15,7 +15,7 @@
   </script>
 
   <title>Sai Pavan Kumar Kistamsetty — AI Engineer &amp; Full-Stack Developer</title>
-  <meta name="description" content="AI engineer and full-stack developer building RAG pipelines, multi-agent workflows, and production web products with Next.js, Python, PostgreSQL, and Gemini.">
+  <meta name="description" content="Sai Pavan builds useful web products and AI tools, from travel and book marketplaces to document search and research.">
   <meta name="author" content="Sai Pavan Kumar Kistamsetty">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <meta name="theme-color" content="#071712" id="theme-color">
@@ -24,7 +24,7 @@
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Sai Pavan Kumar Kistamsetty">
   <meta property="og:title" content="Sai Pavan Kumar Kistamsetty — AI Engineer &amp; Full-Stack Developer">
-  <meta property="og:description" content="I build intelligent products at the intersection of AI and engineering: RAG pipelines, multi-agent workflows, and production web applications.">
+  <meta property="og:description" content="I build useful web products and AI tools, from travel and book marketplaces to document search and research.">
   <meta property="og:url" content="https://saipavan-python.github.io/portfolio/">
   <meta property="og:image" content="https://saipavan-python.github.io/portfolio/assets/og.png">
   <meta property="og:image:width" content="1200">
@@ -33,7 +33,7 @@
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Sai Pavan Kumar Kistamsetty — AI Engineer &amp; Full-Stack Developer">
-  <meta name="twitter:description" content="AI systems, full-stack products, and agent workflows — designed, built, tested, and shipped.">
+  <meta name="twitter:description" content="Web products and AI tools for travel, books, document search, and research.">
   <meta name="twitter:image" content="https://saipavan-python.github.io/portfolio/assets/og.png">
   <meta name="twitter:image:alt" content="Sai Pavan Kumar Kistamsetty portfolio preview">
 
@@ -56,7 +56,7 @@
         "@id": "https://saipavan-python.github.io/portfolio/#person",
         "name": "Sai Pavan Kumar Kistamsetty",
         "jobTitle": "AI Engineer and Full-Stack Developer",
-        "description": "AI engineer and full-stack developer building RAG pipelines, multi-agent workflows, and production web applications.",
+        "description": "Developer building useful web products and AI tools, including marketplaces, document search, and research tools.",
         "url": "https://saipavan-python.github.io/portfolio/",
         "email": "mailto:saipavankistamsetty@gmail.com",
         "telephone": "+91-8096327356",
@@ -161,9 +161,9 @@
           Open to AI engineering &amp; full-stack roles
         </div>
         <p class="eyebrow">Hello, I'm Sai Pavan</p>
-        <h1 id="hero-title">I build <span class="gradient-text">intelligent products</span> at the intersection of AI and engineering.</h1>
-        <p class="hero-lead">I'm an AI engineer and full-stack developer. I design RAG pipelines, multi-agent workflows, and production web applications — then take them from architecture to a working product.</p>
-        <p class="hero-note">Recently: a multi-service mobility marketplace, PDF document intelligence, and multi-agent research and marketing workflows.</p>
+        <h1 id="hero-title">I build <span class="gradient-text">AI tools and web products</span> that help people get things done.</h1>
+        <p class="hero-lead">I'm Sai Pavan, a developer in Telangana. I turn ideas into useful websites, apps, and AI tools—from the first sketch to a working product.</p>
+        <p class="hero-note">Recent work includes a travel marketplace, a book exchange, and tools for searching documents and planning research.</p>
 
         <div class="hero-actions">
           <a class="btn btn-primary" href="#work">
@@ -211,98 +211,97 @@
         <div class="system-card" data-system-map>
           <div class="system-chrome">
             <div class="traffic-lights" aria-hidden="true"><i></i><i></i><i></i></div>
-            <span class="system-path">sp.systems / architecture</span>
-            <span class="system-live"><i aria-hidden="true"></i> interactive</span>
+            <span class="system-path">how a trip gets planned</span>
+            <span class="system-live"><i aria-hidden="true"></i> click to explore</span>
           </div>
 
           <div class="system-body">
             <div class="system-heading">
-              <span class="mono-muted">REQUEST LIFECYCLE</span>
-              <span class="mono-muted">POST /api/trip/plan</span>
+              <span class="mono-muted">PLAN A TRIP</span>
+              <span class="mono-muted">TRIP PLANNER</span>
             </div>
 
             <div class="flow" role="group" aria-label="System architecture layers">
-              <button class="flow-row is-active" type="button" data-node="client" data-detail="Server-rendered pages, typed route handlers, and a client that only sees what it needs." data-label="Client">
+              <button class="flow-row is-active" type="button" data-node="client" data-detail="Choose a destination and tell the planner what you want to spend." data-label="Web page">
                 <span class="flow-index">01</span>
                 <span class="flow-icon" aria-hidden="true">
                   <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 21h8M12 18v3"/></svg>
                 </span>
-                <span class="flow-copy"><b>Client</b><small>Next.js · React</small></span>
-                <span class="flow-tag">edge</span>
+                <span class="flow-copy"><b>Web page</b><small>Next.js · React</small></span>
+                <span class="flow-tag">search</span>
               </button>
 
-              <button class="flow-row" type="button" data-node="api" data-detail="Auth, validation, rate limits, and idempotency live at the boundary — not in the UI." data-label="API layer">
+              <button class="flow-row" type="button" data-node="api" data-detail="The server checks the account, request details, and payment before it saves a booking." data-label="App server">
                 <span class="flow-index">02</span>
                 <span class="flow-icon" aria-hidden="true">
                   <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 7h16M4 12h16M4 17h10"/><circle cx="19" cy="17" r="2"/></svg>
                 </span>
-                <span class="flow-copy"><b>API layer</b><small>Route handlers · Zod</small></span>
-                <span class="flow-tag">auth</span>
+                <span class="flow-copy"><b>App server</b><small>Routes · input checks</small></span>
+                <span class="flow-tag">account</span>
               </button>
 
-              <button class="flow-row" type="button" data-node="logic" data-detail="Concurrency-safe transactions, server-computed totals, and payment webhooks that can be replayed safely." data-label="Business logic">
+              <button class="flow-row" type="button" data-node="logic" data-detail="Booking rules stop two people from taking the same slot and keep totals accurate." data-label="Booking rules">
                 <span class="flow-index">03</span>
                 <span class="flow-icon" aria-hidden="true">
                   <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3v4m0 10v4M3 12h4m10 0h4M5.6 5.6l2.8 2.8m7.2 7.2 2.8 2.8m0-12.8-2.8 2.8M8.4 15.6l-2.8 2.8"/><circle cx="12" cy="12" r="3"/></svg>
                 </span>
-                <span class="flow-copy"><b>Business logic</b><small>Bookings · credits · payments</small></span>
-                <span class="flow-tag">business</span>
+                <span class="flow-copy"><b>Booking rules</b><small>Bookings · credits · payments</small></span>
+                <span class="flow-tag">booking</span>
               </button>
 
-              <button class="flow-row" type="button" data-node="ai" data-detail="AI is a service layer: retrieval, prompts, structured outputs, and a fallback path when the model is wrong or unavailable." data-label="AI services">
+              <button class="flow-row" type="button" data-node="ai" data-detail="The trip planner suggests routes and stops. The rest of the booking still follows clear rules." data-label="AI helper">
                 <span class="flow-index">04</span>
                 <span class="flow-icon" aria-hidden="true">
                   <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3c1.2 3.7 2.3 4.8 6 6-3.7 1.2-4.8 2.3-6 6-1.2-3.7-2.3-4.8-6-6 3.7-1.2 4.8-2.3 6-6Z"/><path d="M19 15c.6 1.8 1.2 2.4 3 3-1.8.6-2.4 1.2-3 3-.6-1.8-1.2-2.4-3-3 1.8-.6 2.4-1.2 3-3Z"/></svg>
                 </span>
-                <span class="flow-copy"><b>AI services</b><small>Gemini · LangGraph · RAG</small></span>
-                <span class="flow-tag">agents</span>
+                <span class="flow-copy"><b>AI helper</b><small>Gemini · trip planner</small></span>
+                <span class="flow-tag">suggest</span>
               </button>
 
-              <button class="flow-row" type="button" data-node="data" data-detail="Relational integrity for bookings and credits; vector retrieval for evidence-backed answers." data-label="Data layer">
+              <button class="flow-row" type="button" data-node="data" data-detail="The database keeps bookings, credits, and payments in sync." data-label="Saved data">
                 <span class="flow-index">05</span>
                 <span class="flow-icon" aria-hidden="true">
                   <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.7"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v6c0 1.7 3.6 3 8 3s8-1.3 8-3V6M4 12v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg>
                 </span>
-                <span class="flow-copy"><b>Data</b><small>Postgres · Prisma · Chroma</small></span>
-                <span class="flow-tag">state</span>
+                <span class="flow-copy"><b>Saved data</b><small>PostgreSQL · Prisma</small></span>
+                <span class="flow-tag">save</span>
               </button>
 
-              <button class="flow-row" type="button" data-node="deploy" data-detail="The same repo builds locally, in CI, and on the deploy target — with environment validation and a repeatable path to production." data-label="Deployment">
+              <button class="flow-row" type="button" data-node="deploy" data-detail="The site and server are prepared so the same product can run in development and online." data-label="Hosting">
                 <span class="flow-index">06</span>
                 <span class="flow-icon" aria-hidden="true">
                   <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 16V4m0 0 4 4m-4-4L8 8"/><path d="M5 14v4a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4"/></svg>
                 </span>
-                <span class="flow-copy"><b>Deploy</b><small>Vercel · Docker · Cloud Run</small></span>
-                <span class="flow-tag">ship</span>
+                <span class="flow-copy"><b>Hosting</b><small>Vercel · Docker · Cloud Run</small></span>
+                <span class="flow-tag">online</span>
               </button>
             </div>
 
             <div class="system-detail" aria-live="polite">
-              <span class="system-detail-label" data-detail-label>01 / Client</span>
-              <p data-detail-text>Server-rendered pages, typed route handlers, and a client that only sees what it needs.</p>
+              <span class="system-detail-label" data-detail-label>01 / Web page</span>
+              <p data-detail-text>Choose a destination and tell the planner what you want to spend.</p>
             </div>
 
             <div class="terminal" aria-hidden="true">
               <div class="terminal-bar">
-                <span>trace.log</span>
-                <span class="terminal-status">200 OK</span>
+                <span>trip plan</span>
+                <span class="terminal-status">ready</span>
               </div>
-              <pre><span class="t-prompt">$</span> POST /api/trip/plan
-<span class="t-arrow">→</span> auth.verify()          <span class="t-time">12ms</span>
-<span class="t-arrow">→</span> zod.parse(body)        <span class="t-ok">ok</span>
-<span class="t-arrow">→</span> agent.plan({ budget }) <span class="t-time">184ms</span>
-<span class="t-arrow">→</span> rag.retrieve("budget") <span class="t-time">67ms</span>
-<span class="t-arrow">→</span> gemini.generate()      <span class="t-ok">schema ✓</span>
-<span class="t-prompt">←</span> 200 { itinerary, cost }<span class="cursor" aria-hidden="true">▍</span></pre>
+              <pre><span class="t-prompt">FROM</span> Kurnool
+<span class="t-arrow">→</span> Choose your dates
+<span class="t-arrow">→</span> Set a travel budget
+<span class="t-arrow">→</span> Compare rides and stops
+<span class="t-arrow">→</span> Pick a route that fits
+<span class="t-prompt">✓</span> Your trip plan is ready<span class="cursor" aria-hidden="true">▍</span></pre>
             </div>
           </div>
         </div>
 
         <div class="floating-note floating-note-a" aria-hidden="true">
-          <span class="dot"></span> RAG pipeline
+          <span class="dot"></span> document search
         </div>
         <div class="floating-note floating-note-b" aria-hidden="true">
-          <span class="dot dot-blue"></span> agent workflow
+          <span class="dot dot-blue"></span> AI helpers
         </div>
       </div>
     </section>
@@ -314,24 +313,24 @@
     <section class="section container" id="work" aria-labelledby="work-title">
       <div class="section-head reveal">
         <p class="eyebrow">Selected work</p>
-        <h2 id="work-title">Proof, not a pitch deck.</h2>
-        <p class="section-lead">Six selected projects across AI engineering, full-stack marketplaces, and intelligent automation. Each project is labeled with its current status, and prototype scope is kept clear.</p>
+        <h2 id="work-title">A look at what I've built.</h2>
+        <p class="section-lead">Seven projects across travel, books, research, and AI. Each card shows what works today and what is still in progress.</p>
       </div>
 
       <div class="projects">
-        <article class="project project-featured reveal">
+        <article class="project project-featured project-near-wheels reveal">
           <div class="project-content">
             <div class="project-topline">
               <span class="project-category">AI mobility marketplace</span>
               <span class="project-status"><i class="dot"></i> Tested · private build</span>
             </div>
             <h3>Near Wheels</h3>
-            <p class="project-summary">A seven-vertical mobility marketplace for India's road-transport and agri-services economy — ride-sharing, rentals, garages, driving schools, drone spraying, farm equipment, and intercity buses in one product.</p>
+            <p class="project-summary">I built one place to find rides, rent vehicles, book a garage or driving lesson, and explore farm services and intercity buses.</p>
             <ul class="project-highlights">
-              <li>Concurrency-safe booking with row locks</li>
-              <li>Idempotent Razorpay payment verification</li>
-              <li>Gemini-powered budget trip planner</li>
-              <li>73 API route handlers · 79 tests</li>
+              <li>Bookings stay correct when several people reserve at once</li>
+              <li>Payments are checked before a booking is confirmed</li>
+              <li>AI trip planner suggests routes within a budget</li>
+              <li>73 booking routes · 79 automated checks</li>
             </ul>
             <div class="project-stack" aria-label="Technology stack">
               <span>Next.js</span><span>TypeScript</span><span>Prisma</span><span>PostgreSQL</span><span>Gemini</span><span>Razorpay</span>
@@ -343,17 +342,17 @@
           </div>
           <button class="project-media project-media-featured" type="button" data-case="near-wheels" aria-label="Open Near Wheels case study">
             <img src="assets/projects/near-wheels-home.webp" alt="Near Wheels marketplace homepage showing ride sharing, vehicle rentals, and local services" width="1280" height="820" loading="eager">
-            <span class="media-badge">7 verticals</span>
+            <span class="media-badge">7 services</span>
             <span class="media-overlay"><span>View case study</span></span>
           </button>
         </article>
 
-        <article class="project reveal">
+        <article class="project project-bookloop reveal">
           <button class="project-media mock-wrap" type="button" data-case="bookloop" aria-label="Open BookLoop India case study">
             <div class="mock mock-bookloop" aria-hidden="true">
               <div class="mock-topbar">
                 <span class="mock-logo">BookLoop<span>.</span></span>
-                <span class="mock-search">Search titles, authors, ISBN…</span>
+                <span class="mock-search">Search books or authors…</span>
                 <span class="mock-city">Kurnool</span>
               </div>
               <div class="mock-bookloop-hero">
@@ -373,15 +372,15 @@
           <div class="project-content">
             <div class="project-topline">
               <span class="project-category">Book exchange marketplace</span>
-              <span class="project-status"><i class="dot dot-amber"></i> Tested · private MVP</span>
+              <span class="project-status"><i class="dot dot-amber"></i> Private · first version</span>
             </div>
             <h3>BookLoop India</h3>
-            <p class="project-summary">A mobile-first peer-to-peer book exchange for Indian readers, built around credits instead of cash — with atomic exchange transactions, row-level security, wish-list alerts, and moderation.</p>
+            <p class="project-summary">Readers can trade used books with people nearby, using credits instead of cash.</p>
             <ul class="project-highlights">
-              <li>Credit ledger with row-level locks</li>
-              <li>Supabase Auth + RLS</li>
-              <li>ISBN wish-list alerts</li>
-              <li>SEO-ready discovery pages</li>
+              <li>Credits update safely after each trade</li>
+              <li>Private accounts and book listings</li>
+              <li>Alerts when a wanted book is listed</li>
+              <li>Book pages are easy to find in search</li>
             </ul>
             <div class="project-stack" aria-label="Technology stack">
               <span>Next.js 16</span><span>React 19</span><span>Supabase</span><span>PostgreSQL</span><span>Zod</span>
@@ -393,17 +392,17 @@
           </div>
         </article>
 
-        <article class="project project-archive reveal">
+        <article class="project project-open-lens reveal">
           <button class="project-media mock-wrap" type="button" data-case="rag" aria-label="Open Open Competitor Lens case study">
             <div class="mock mock-rag" aria-hidden="true">
               <div class="mock-rag-head">
                 <span class="mock-logo">Competitor Lens</span>
-                <span class="mock-pill">evidence required</span>
+                <span class="mock-pill">source needed</span>
               </div>
               <div class="mock-rag-flow">
                 <div class="rag-doc"><span>PDF</span><i></i><i></i><i class="short"></i></div>
                 <span class="rag-arrow">→</span>
-                <div class="rag-chunks"><span>chunk 01</span><span>chunk 02</span><span>chunk 03</span></div>
+                <div class="rag-chunks"><span>Page 01</span><span>Page 02</span><span>Page 03</span></div>
                 <span class="rag-arrow">→</span>
                 <div class="rag-vector"><i></i><i></i><i></i><i></i><i></i><i></i></div>
               </div>
@@ -416,16 +415,16 @@
           </button>
           <div class="project-content">
             <div class="project-topline">
-              <span class="project-category">RAG · Evidence verification</span>
-              <span class="project-status"><i class="dot dot-blue"></i> Public · pre-alpha</span>
+              <span class="project-category">AI research · source checks</span>
+              <span class="project-status"><i class="dot dot-blue"></i> Public · early release</span>
             </div>
             <h3>Open Competitor Lens</h3>
-            <p class="project-summary">An evidence-backed research library where every claim in a report must trace to a retrieved source. Built around retrieval, structured extraction, and mechanical fact-checking.</p>
+            <p class="project-summary">A research tool that checks each report claim against the original source, so links support what the report says.</p>
             <ul class="project-highlights">
-              <li>Chroma vector store + BM25 retrieval</li>
-              <li>SSRF-guarded web retrieval</li>
-              <li>Schema-constrained extraction</li>
-              <li>1,124 tests · pre-alpha</li>
+              <li>Every claim must match its source text</li>
+              <li>Searches documents and websites safely</li>
+              <li>Checks facts before they reach a report</li>
+              <li>1,124 automated checks · early release</li>
             </ul>
             <div class="project-stack" aria-label="Technology stack">
               <span>Python</span><span>ChromaDB</span><span>Pydantic</span><span>Gemini</span><span>Playwright</span>
@@ -437,12 +436,12 @@
           </div>
         </article>
 
-        <article class="project reveal">
+        <article class="project project-agents reveal">
           <button class="project-media mock-wrap" type="button" data-case="agents" aria-label="Open Multi-Agent AI System case study">
             <div class="mock mock-agents" aria-hidden="true">
               <div class="agents-head">
-                <span class="mock-logo">agent.run()</span>
-                <span class="mock-pill mock-pill-green">orchestrating</span>
+                <span class="mock-logo">Task team</span>
+                <span class="mock-pill mock-pill-green">working together</span>
               </div>
               <div class="agents-graph">
                 <div class="agent-node agent-planner"><b>Research</b><small>gather findings</small></div>
@@ -453,22 +452,22 @@
                 <div class="agent-line"></div>
                 <div class="agent-node agent-writer"><b>Reporting</b><small>consolidate output</small></div>
               </div>
-              <div class="agents-output"><span>output.json</span><small>{ findings, analysis, response }</small></div>
+              <div class="agents-output"><span>Final report</span><small>findings · review · response</small></div>
             </div>
             <span class="media-overlay"><span>View case study</span></span>
           </button>
           <div class="project-content">
             <div class="project-topline">
-              <span class="project-category">Multi-agent automation</span>
-              <span class="project-status"><i class="dot"></i> Implemented · tested</span>
+              <span class="project-category">AI helpers · task workflow</span>
+              <span class="project-status"><i class="dot"></i> Built · tested</span>
             </div>
             <h3>Multi-Agent AI System</h3>
-            <p class="project-summary">A role-based AI system that splits complex tasks across specialized research, analysis, content, and reporting agents, then coordinates their work into a structured result.</p>
+            <p class="project-summary">A group of AI helpers work on one task: they research, review, write, and bring their work together in one report.</p>
             <ul class="project-highlights">
-              <li>Specialized agent roles</li>
-              <li>Structured JSON outputs</li>
-              <li>Shared memory + critique loop</li>
-              <li>Human review states</li>
+              <li>Each helper has one clear job</li>
+              <li>Results follow a consistent format</li>
+              <li>A review step catches gaps</li>
+              <li>People can check results before they are final</li>
             </ul>
             <div class="project-stack" aria-label="Technology stack">
               <span>Python</span><span>LangGraph</span><span>CrewAI</span><span>LangChain</span><span>OpenAI API</span><span>Gemini API</span><span>Pydantic</span>
@@ -480,71 +479,74 @@
           </div>
         </article>
 
-        <article class="project reveal">
-          <div class="project-media mock-wrap" aria-hidden="true">
+        <article class="project project-doc-ai reveal">
+          <button class="project-media mock-wrap" type="button" data-case="doc-ai" aria-label="Open RAG Document Intelligence case study">
             <div class="mock mock-rag mock-large">
-              <div class="mock-rag-head"><span class="mock-logo">Document Intelligence</span><span class="mock-pill">PDF · semantic search</span></div>
-              <div class="mock-rag-flow"><div class="rag-doc"><span>PDF</span><i></i><i></i><i class="short"></i></div><span class="rag-arrow">→</span><div class="rag-chunks"><span>chunk 01</span><span>chunk 02</span><span>chunk 03</span></div><span class="rag-arrow">→</span><div class="rag-vector"><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
-              <div class="mock-rag-answer"><span class="mock-check">✓</span><div><strong>Context retrieved</strong><small>Relevant passages sent with the question</small></div></div>
+              <div class="mock-rag-head"><span class="mock-logo">Document Intelligence</span><span class="mock-pill">PDF · document search</span></div>
+              <div class="mock-rag-flow"><div class="rag-doc"><span>PDF</span><i></i><i></i><i class="short"></i></div><span class="rag-arrow">→</span><div class="rag-chunks"><span>Page 01</span><span>Page 02</span><span>Page 03</span></div><span class="rag-arrow">→</span><div class="rag-vector"><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+              <div class="mock-rag-answer"><span class="mock-check">✓</span><div><strong>Source found</strong><small>Matching text helps shape the answer</small></div></div>
             </div>
-          </div>
+            <span class="media-overlay"><span>View case study</span></span>
+          </button>
           <div class="project-content">
-            <div class="project-topline"><span class="project-category">Generative AI · RAG</span><span class="project-status"><i class="dot dot-blue"></i> Implemented · tested</span></div>
+            <div class="project-topline"><span class="project-category">AI document search</span><span class="project-status"><i class="dot dot-blue"></i> Built · tested</span></div>
             <h3>RAG Document Intelligence</h3>
-            <p class="project-summary">Ask natural-language questions about PDFs. The pipeline extracts text, splits it into useful chunks, retrieves relevant passages, and gives an LLM grounded context for its answer.</p>
+            <p class="project-summary">Ask a question about a PDF and get an answer based on the passages that match it.</p>
             <ul class="project-highlights">
-              <li>PDF extraction with PyMuPDF and pdfplumber</li>
-              <li>Chunking, embeddings, and vector storage</li>
-              <li>Semantic retrieval with ChromaDB or FAISS</li>
-              <li>Context-aware answers with source material</li>
+              <li>Reads text from PDF files</li>
+              <li>Finds passages related to each question</li>
+              <li>Uses those passages to shape the answer</li>
+              <li>Keeps the source text close at hand</li>
             </ul>
             <div class="project-stack" aria-label="Technology stack"><span>Python</span><span>LangChain</span><span>ChromaDB</span><span>FAISS</span><span>PyMuPDF</span><span>pdfplumber</span><span>OpenAI</span><span>Gemini</span></div>
             <div class="project-actions"><button class="btn btn-sm btn-secondary" type="button" data-case="doc-ai">Read case study</button><a class="text-link" href="mailto:saipavankistamsetty@gmail.com?subject=RAG%20Document%20Intelligence%20walkthrough">Ask for a walkthrough <span aria-hidden="true">↗</span></a></div>
           </div>
         </article>
 
-        <article class="project reveal">
-          <div class="project-media mock-wrap" aria-hidden="true">
+        <article class="project project-marketing reveal">
+          <button class="project-media mock-wrap" type="button" data-case="marketing" aria-label="Open AI Marketing Agency case study">
             <div class="mock mock-agents mock-large">
-              <div class="agents-head"><span class="mock-logo">campaign.flow()</span><span class="mock-pill mock-pill-green">research → report</span></div>
+              <div class="agents-head"><span class="mock-logo">Campaign plan</span><span class="mock-pill mock-pill-green">brief → ideas → plan</span></div>
               <div class="agents-graph"><div class="agent-node agent-planner"><b>Client</b><small>profile</small></div><div class="agent-line"></div><div class="agent-node agent-research"><b>Research</b><small>competitors</small></div><div class="agent-line"></div><div class="agent-node agent-analyst"><b>Content</b><small>campaign ideas</small></div><div class="agent-line"></div><div class="agent-node agent-writer"><b>Report</b><small>strategy</small></div></div>
-              <div class="agents-output"><span>marketing-brief</span><small>research · content · creative direction</small></div>
+              <div class="agents-output"><span>Campaign report</span><small>research · content · design</small></div>
             </div>
-          </div>
+            <span class="media-overlay"><span>View case study</span></span>
+          </button>
           <div class="project-content">
-            <div class="project-topline"><span class="project-category">AI automation · Marketing</span><span class="project-status"><i class="dot"></i> Implemented · tested</span></div>
+            <div class="project-topline"><span class="project-category">AI tools · marketing</span><span class="project-status"><i class="dot"></i> Built · tested</span></div>
             <h3>AI Marketing Agency</h3>
-            <p class="project-summary">A multi-agent workflow for repetitive marketing research and planning. Specialized agents process a client profile, research competitors, draft content ideas, shape creative direction, and consolidate a report.</p>
+            <p class="project-summary">A planning tool that turns a client brief into competitor research, content ideas, creative notes, and one clear report.</p>
             <ul class="project-highlights">
-              <li>Client profiling and competitor research</li>
-              <li>Content ideas and design briefs</li>
-              <li>Role-based agent orchestration</li>
-              <li>Consolidated marketing reports</li>
+              <li>Summarizes the client's goals</li>
+              <li>Looks at other products in the market</li>
+              <li>Suggests posts and design ideas</li>
+              <li>Brings the work together in one report</li>
             </ul>
             <div class="project-stack" aria-label="Technology stack"><span>Python</span><span>LangChain</span><span>LangGraph</span><span>CrewAI</span><span>OpenAI API</span><span>Gemini API</span></div>
             <div class="project-actions"><button class="btn btn-sm btn-secondary" type="button" data-case="marketing">Read case study</button><a class="text-link" href="mailto:saipavankistamsetty@gmail.com?subject=AI%20Marketing%20Agency%20walkthrough">Ask for a walkthrough <span aria-hidden="true">↗</span></a></div>
           </div>
         </article>
 
-        <article class="project reveal">
-          <div class="project-media project-media-ev" aria-hidden="true">
+        <article class="project project-ev reveal">
+          <button class="project-media project-media-ev" type="button" data-case="ev-sharing" aria-label="Open EV Charger Sharing Marketplace case study">
             <div class="ev-preview">
               <div class="ev-topline"><span class="ev-brand"><i aria-hidden="true">↯</i> charge.near</span><span class="ev-location">INDIA · NEARBY</span></div>
               <div class="ev-map" aria-hidden="true"><span class="ev-road ev-road-a"></span><span class="ev-road ev-road-b"></span><span class="ev-road ev-road-c"></span><i class="ev-pin ev-pin-a">↯</i><i class="ev-pin ev-pin-b">↯</i><i class="ev-pin ev-pin-c">↯</i><span class="ev-you">YOU</span></div>
-              <div class="ev-listing"><span class="ev-plug">↯</span><span><b>Home charger nearby</b><small>Host-listed · booking prototype</small></span><span class="ev-arrow">↗</span></div>
+              <div class="ev-listing"><span class="ev-plug">↯</span><span><b>Home charger nearby</b><small>Listed by a local host</small></span><span class="ev-arrow">↗</span></div>
             </div>
-          </div>
+            <span class="media-overlay"><span>View case study</span></span>
+          </button>
           <div class="project-content">
-            <div class="project-topline"><span class="project-category">MobilityTech · EVTech</span><span class="project-status"><i class="dot dot-amber"></i> Implemented prototype</span></div>
+            <div class="project-topline"><span class="project-category">Electric vehicle charging</span><span class="project-status"><i class="dot dot-amber"></i> Working prototype</span></div>
             <h3>EV Charger Sharing Marketplace</h3>
-            <p class="project-summary">A peer-to-peer charging marketplace concept for India. Drivers can discover host-listed chargers, while charger owners can present available infrastructure through a simple marketplace experience.</p>
+            <p class="project-summary">An early marketplace idea for finding and booking home chargers listed by local hosts.</p>
             <ul class="project-highlights">
-              <li>Driver-facing charger discovery</li>
-              <li>Host and charger listing workflows</li>
-              <li>Marketplace booking experience</li>
-              <li>Prototype scope kept distinct from future features</li>
+              <li>Drivers can search for chargers nearby</li>
+              <li>Hosts can list a charger</li>
+              <li>Visitors can explore the booking flow</li>
+              <li>Live charger connections are future work</li>
             </ul>
-            <p class="project-tech-note">Prototype scope covers discovery, host listings, and booking flows. Live charger connectivity and charging-session monitoring are future scope.</p>
+            <p class="project-tech-note">This version covers finding, listing, and booking chargers. Connecting to live chargers is future work.</p>
             <div class="project-actions"><button class="btn btn-sm btn-secondary" type="button" data-case="ev-sharing">Read case study</button><a class="text-link" href="mailto:saipavankistamsetty@gmail.com?subject=EV%20Charger%20Sharing%20walkthrough">Ask for a walkthrough <span aria-hidden="true">↗</span></a></div>
           </div>
         </article>
@@ -552,11 +554,10 @@
 
       <div class="more-builds reveal">
         <div class="more-builds-head">
-          <span class="eyebrow">More builds</span>
-          <p>Live product work, public experiments, and smaller repositories.</p>
+          <span class="eyebrow">More projects</span>
+          <p>Smaller apps and public experiments.</p>
         </div>
         <div class="more-builds-links">
-          <button type="button" data-case="rag"><b>Open Competitor Lens</b><span>Public pre-alpha · evidence-backed research · 1,124 tests ↗</span></button>
           <a href="https://github.com/saipavan-python/smartschool-management-system" target="_blank" rel="noopener noreferrer"><b>SmartSchool Management System</b><span>Flask · MySQL · role-based dashboards</span></a>
           <a href="https://github.com/saipavan-python/ATM-Simulator" target="_blank" rel="noopener noreferrer"><b>ATM Simulator</b><span>Python · auth · transactions</span></a>
           <a href="https://github.com/saipavan-python/smartCalculator-python" target="_blank" rel="noopener noreferrer"><b>Smart Calculator</b><span>Python · CLI · error handling</span></a>
@@ -570,10 +571,10 @@
       <div class="about-grid">
         <div class="about-copy reveal">
           <p class="eyebrow">About</p>
-          <h2 id="about-title">I care about how the pieces connect.</h2>
-          <p>I'm Sai Pavan, an AI engineer and full-stack developer based in Telangana, India. My path into software started with an electrical engineering background, which is probably why I care about systems: how the pieces connect, where the failure modes are, and what happens when load arrives.</p>
-          <p>Most of my work sits between AI and product. I build RAG pipelines that retrieve evidence instead of guessing, multi-agent workflows that divide a problem into specialist roles, and full-stack applications that put those capabilities behind a real interface. I like the unglamorous parts too: schema design, auth boundaries, idempotency, error states, and tests that actually fail when the code is wrong.</p>
-          <p>I'm looking for a team where I can own a problem end-to-end — from architecture and backend to the interface someone uses — and keep shipping.</p>
+          <h2 id="about-title">I like making useful things work well.</h2>
+          <p>I'm Sai Pavan, a developer in Telangana, India. I studied electrical engineering before moving into software. That background taught me to look at how parts fit together and what could go wrong.</p>
+          <p>I build web apps and AI tools, from a ride and service marketplace to a book exchange and document search. I work across the whole product: the pages, server, data, sign-in, and tests.</p>
+          <p>I enjoy the practical details too: secure accounts, reliable bookings, clear error messages, and tests that catch problems early. I'm looking for a team where I can build a product from start to finish and keep improving it.</p>
           <a class="text-link about-link" href="mailto:saipavankistamsetty@gmail.com">Start a conversation <span aria-hidden="true">↗</span></a>
         </div>
 
@@ -597,9 +598,9 @@
 
     <section class="section container" id="skills" aria-labelledby="skills-title">
       <div class="section-head reveal">
-        <p class="eyebrow">Technical skills</p>
-        <h2 id="skills-title">Grouped by where I use them.</h2>
-        <p class="section-lead">No percentage bars. The work above is the evidence. These are the tools I reach for when a problem calls for them.</p>
+        <p class="eyebrow">Skills &amp; tools</p>
+        <h2 id="skills-title">Tools I use to build them.</h2>
+        <p class="section-lead">Grouped by the kind of work they help me do. The projects above show how I use them.</p>
       </div>
 
       <div class="skills-grid">
@@ -608,9 +609,9 @@
             <span class="skill-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3c1.2 3.7 2.3 4.8 6 6-3.7 1.2-4.8 2.3-6 6-1.2-3.7-2.3-4.8-6-6 3.7-1.2 4.8-2.3 6-6Z"/><path d="M19 15c.6 1.8 1.2 2.4 3 3-1.8.6-2.4 1.2-3 3-.6-1.8-1.2-2.4-3-3 1.8-.6 2.4-1.2 3-3Z"/></svg>
             </span>
-            <h3>AI &amp; Generative AI</h3>
+            <h3>AI tools and search</h3>
           </div>
-          <p>Applied LLM work: retrieval, agent orchestration, structured outputs, and evaluation.</p>
+          <p>Tools that help software find information, write, and complete tasks.</p>
           <div class="tag-list">
             <span>LangChain</span><span>LangGraph</span><span>CrewAI</span><span>OpenAI API</span><span>Gemini API</span><span>Prompt engineering</span><span>RAG</span><span>Multi-agent systems</span><span>Semantic search</span><span>Structured outputs</span><span>ChromaDB</span><span>FAISS</span><span>PyMuPDF</span><span>pdfplumber</span>
           </div>
@@ -621,9 +622,9 @@
             <span class="skill-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 7h16M4 12h16M4 17h10"/><circle cx="19" cy="17" r="2"/></svg>
             </span>
-            <h3>Backend &amp; Data</h3>
+            <h3>Server and databases</h3>
           </div>
-          <p>APIs and data models that hold up under real workflows.</p>
+          <p>Server code, user accounts, databases, and safe payments.</p>
           <div class="tag-list">
             <span>Python</span><span>Flask</span><span>REST APIs</span><span>Authentication</span><span>JWT</span><span>Node.js / Express</span><span>Prisma</span><span>PostgreSQL</span><span>Supabase</span><span>MySQL</span><span>SQLite</span><span>SQL</span><span>Zod</span>
           </div>
@@ -634,9 +635,9 @@
             <span class="skill-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 21h8M12 18v3"/></svg>
             </span>
-            <h3>Frontend</h3>
+            <h3>Web development</h3>
           </div>
-          <p>Interfaces that make complex systems feel simple.</p>
+          <p>Web pages and apps that work well on phones and computers.</p>
           <div class="tag-list">
             <span>React</span><span>Next.js</span><span>Angular 16</span><span>TypeScript</span><span>JavaScript</span><span>Tailwind CSS</span><span>Framer Motion</span><span>Angular Material</span><span>Bootstrap</span>
           </div>
@@ -647,9 +648,9 @@
             <span class="skill-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 16V4m0 0 4 4m-4-4L8 8"/><path d="M5 14v4a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4"/></svg>
             </span>
-            <h3>Tools &amp; Infrastructure</h3>
+            <h3>Testing and hosting</h3>
           </div>
-          <p>Ship, observe, and keep the build reproducible.</p>
+          <p>Tools for testing, publishing, and keeping projects reliable.</p>
           <div class="tag-list">
             <span>Git</span><span>GitHub</span><span>Docker</span><span>Vercel</span><span>Google Cloud Run</span><span>Supabase</span><span>Postman</span><span>Vitest</span><span>Pytest</span><span>Ruff</span><span>Playwright</span>
           </div>
@@ -660,93 +661,93 @@
     <section class="section container" id="process" aria-labelledby="process-title">
       <div class="section-head reveal">
         <p class="eyebrow">How I build</p>
-        <h2 id="process-title">Engineering is the part between the idea and the demo.</h2>
-        <p class="section-lead">A repeatable path from problem to production. Select a step to see where it sits in the system.</p>
+        <h2 id="process-title">How I turn an idea into a working product.</h2>
+        <p class="section-lead">I break the work into clear steps, check how they fit together, and test the parts most likely to fail.</p>
       </div>
 
       <div class="process-grid">
         <div class="steps reveal" role="group" aria-label="Engineering process steps">
-          <button class="step is-active" type="button" data-step="1" data-layers="client,api,logic,ai,data,deploy" data-detail="Define the user, the constraint, and the failure that matters. Write it down before choosing a stack.">
+          <button class="step is-active" type="button" data-step="1" data-layers="client,api,logic,ai,data,deploy" data-detail="Talk through who will use it, what they need, and how we will know it works.">
             <span class="step-number">01</span>
-            <span class="step-copy"><b>Understand the problem</b><small>User, constraint, and the failure that matters.</small></span>
+            <span class="step-copy"><b>Understand the need</b><small>Who needs it and what should it do?</small></span>
             <span class="step-arrow" aria-hidden="true">↗</span>
           </button>
-          <button class="step" type="button" data-step="2" data-layers="client,api,logic,ai,data,deploy" data-detail="Map the data, auth boundaries, and model calls. Decide what must be deterministic before anything is generated.">
+          <button class="step" type="button" data-step="2" data-layers="client,api,logic,ai,data,deploy" data-detail="Plan how the pages, server, saved information, and any AI features will work together.">
             <span class="step-number">02</span>
-            <span class="step-copy"><b>Design the architecture</b><small>Data flow, auth boundaries, model calls.</small></span>
+            <span class="step-copy"><b>Make a plan</b><small>Pages, server, saved data, and AI.</small></span>
             <span class="step-arrow" aria-hidden="true">↗</span>
           </button>
-          <button class="step" type="button" data-step="3" data-layers="api,logic,data" data-detail="Schema, routes, validation, and the transaction boundaries that protect the data. Build the backend before the interface depends on it.">
+          <button class="step" type="button" data-step="3" data-layers="api,logic,data" data-detail="Set up accounts, saved information, and checks that prevent mistakes.">
             <span class="step-number">03</span>
-            <span class="step-copy"><b>Build the backend</b><small>Schema, routes, validation, transactions.</small></span>
+            <span class="step-copy"><b>Build the server and data</b><small>Accounts, saved details, and product rules.</small></span>
             <span class="step-arrow" aria-hidden="true">↗</span>
           </button>
-          <button class="step" type="button" data-step="4" data-layers="ai,data" data-detail="Prompts, retrieval, structured outputs, and a fallback path when the model is wrong or unavailable. AI should degrade, not disappear.">
+          <button class="step" type="button" data-step="4" data-layers="ai,data" data-detail="Add AI with clear instructions and a backup plan for when it gives a poor answer or is unavailable.">
             <span class="step-number">04</span>
-            <span class="step-copy"><b>Integrate AI capabilities</b><small>Prompts, retrieval, schemas, fallbacks.</small></span>
+            <span class="step-copy"><b>Add AI features</b><small>Search, clear instructions, and backups.</small></span>
             <span class="step-arrow" aria-hidden="true">↗</span>
           </button>
-          <button class="step" type="button" data-step="5" data-layers="client,api" data-detail="A real interface with loading, empty, error, and success states — not just the happy path.">
+          <button class="step" type="button" data-step="5" data-layers="client,api" data-detail="Build pages that work on phones and show people what is happening, even when something goes wrong.">
             <span class="step-number">05</span>
-            <span class="step-copy"><b>Develop the frontend</b><small>States, accessibility, and responsive UI.</small></span>
+            <span class="step-copy"><b>Build the web pages</b><small>Works on phones, with clear loading and error screens.</small></span>
             <span class="step-arrow" aria-hidden="true">↗</span>
           </button>
-          <button class="step" type="button" data-step="6" data-layers="client,api,logic,ai,data,deploy" data-detail="Unit tests for the logic, browser checks for the flow, and profiling where it matters. Test the failure modes, not the marketing path.">
+          <button class="step" type="button" data-step="6" data-layers="client,api,logic,ai,data,deploy" data-detail="Try common tasks, mistakes, and slow connections before the product goes online.">
             <span class="step-number">06</span>
-            <span class="step-copy"><b>Test and optimize</b><small>Logic tests, browser checks, profiling.</small></span>
+            <span class="step-copy"><b>Test the experience</b><small>Try the usual paths and the tricky ones.</small></span>
             <span class="step-arrow" aria-hidden="true">↗</span>
           </button>
-          <button class="step" type="button" data-step="7" data-layers="deploy" data-detail="CI, environment validation, observability, and a deployment path that can be repeated by someone else.">
+          <button class="step" type="button" data-step="7" data-layers="deploy" data-detail="Put the product online, watch for problems, and improve it over time.">
             <span class="step-number">07</span>
-            <span class="step-copy"><b>Deploy and maintain</b><small>CI, env validation, observability.</small></span>
+            <span class="step-copy"><b>Launch and improve</b><small>Watch how it works and fix problems.</small></span>
             <span class="step-arrow" aria-hidden="true">↗</span>
           </button>
         </div>
 
         <div class="arch-card reveal">
           <div class="arch-head">
-            <span class="mono-muted">SYSTEM MAP</span>
-            <span class="arch-status"><i aria-hidden="true"></i> one repo, four targets</span>
+            <span class="mono-muted">HOW THE PARTS CONNECT</span>
+            <span class="arch-status"><i aria-hidden="true"></i> one product, six parts</span>
           </div>
-          <div class="arch-layers" role="group" aria-label="Architecture layers">
-            <button class="arch-layer is-active" type="button" data-layer="client" data-detail="Next.js App Router, React components, and a design system that handles real states.">
+          <div class="arch-layers" role="group" aria-label="How the parts of a web product work together">
+            <button class="arch-layer is-active" type="button" data-layer="client" data-detail="The pages people use, designed to work on phones and computers.">
               <span class="arch-icon" aria-hidden="true">▤</span>
-              <span><b>Frontend</b><small>Next.js · React · Angular</small></span>
+              <span><b>Web pages</b><small>Next.js · React · Angular</small></span>
               <span class="arch-arrow" aria-hidden="true">→</span>
             </button>
-            <button class="arch-layer is-active" type="button" data-layer="api" data-detail="Route handlers, Flask/Express APIs, Zod validation, auth checks, and rate limits.">
+            <button class="arch-layer is-active" type="button" data-layer="api" data-detail="Checks requests, accounts, and payments before changing saved information.">
               <span class="arch-icon" aria-hidden="true">⇄</span>
-              <span><b>API layer</b><small>Route handlers · Flask · Express</small></span>
+              <span><b>App server</b><small>Routes · Flask · Express</small></span>
               <span class="arch-arrow" aria-hidden="true">→</span>
             </button>
-            <button class="arch-layer is-active" type="button" data-layer="logic" data-detail="Bookings, credits, payments, admin actions, and the transaction boundaries that keep them correct.">
+            <button class="arch-layer is-active" type="button" data-layer="logic" data-detail="Controls when a booking can be made, how credits move, and who can use admin tools.">
               <span class="arch-icon" aria-hidden="true">⚙</span>
-              <span><b>Business logic</b><small>Bookings · credits · payments</small></span>
+              <span><b>Product rules</b><small>Bookings · credits · payments</small></span>
               <span class="arch-arrow" aria-hidden="true">→</span>
             </button>
-            <button class="arch-layer is-active" type="button" data-layer="ai" data-detail="Gemini/OpenAI, LangGraph workflows, CrewAI roles, RAG retrieval, and structured outputs.">
+            <button class="arch-layer is-active" type="button" data-layer="ai" data-detail="Searches documents, suggests trips, and helps prepare useful written answers.">
               <span class="arch-icon" aria-hidden="true">✧</span>
-              <span><b>AI services</b><small>Gemini · LangGraph · CrewAI · RAG</small></span>
+              <span><b>AI tools</b><small>Gemini · LangGraph · CrewAI</small></span>
               <span class="arch-arrow" aria-hidden="true">→</span>
             </button>
-            <button class="arch-layer is-active" type="button" data-layer="data" data-detail="PostgreSQL with Prisma, Supabase auth/RLS, and ChromaDB for evidence retrieval.">
+            <button class="arch-layer is-active" type="button" data-layer="data" data-detail="Keeps accounts, bookings, and documents available to the right people.">
               <span class="arch-icon" aria-hidden="true">▦</span>
-              <span><b>Data</b><small>PostgreSQL · Prisma · Supabase · Chroma</small></span>
+              <span><b>Saved information</b><small>PostgreSQL · Prisma · Supabase</small></span>
               <span class="arch-arrow" aria-hidden="true">→</span>
             </button>
-            <button class="arch-layer is-active" type="button" data-layer="deploy" data-detail="Vercel, Docker, and Cloud Run. Environment validation and a repeatable deployment path.">
+            <button class="arch-layer is-active" type="button" data-layer="deploy" data-detail="Makes the app available online and provides a clear way to update it.">
               <span class="arch-icon" aria-hidden="true">▲</span>
-              <span><b>Deploy</b><small>Vercel · Docker · Cloud Run</small></span>
+              <span><b>Hosting</b><small>Vercel · Docker · Cloud Run</small></span>
               <span class="arch-arrow" aria-hidden="true">→</span>
             </button>
           </div>
           <div class="arch-detail" aria-live="polite">
-            <span class="mono-muted" data-arch-label>STEP 01 / PROBLEM</span>
-            <p data-arch-detail>Define the user, the constraint, and the failure that matters. Write it down before choosing a stack.</p>
+            <span class="mono-muted" data-arch-label>STEP 01 / NEED</span>
+            <p data-arch-detail>Talk through who will use it, what they need, and how we will know it works.</p>
           </div>
           <div class="arch-notes">
-            <div><span class="mono-muted">RAG</span><p>ingest → chunk → embed → retrieve → answer</p></div>
-            <div><span class="mono-muted">AGENTS</span><p>plan → delegate → tools → verify</p></div>
+            <div><span class="mono-muted">DOCUMENTS</span><p>read → search → show the source</p></div>
+            <div><span class="mono-muted">AI HELPERS</span><p>plan → research → review → write</p></div>
           </div>
         </div>
       </div>
@@ -755,8 +756,8 @@
     <section class="section container" id="experience" aria-labelledby="experience-title">
       <div class="section-head reveal">
         <p class="eyebrow">Experience &amp; journey</p>
-        <h2 id="experience-title">A short, factual timeline.</h2>
-        <p class="section-lead">Only the work I can point to. No invented titles, dates, or client logos.</p>
+        <h2 id="experience-title">My path into software.</h2>
+        <p class="section-lead">I started in electrical engineering and moved into building web and AI products.</p>
       </div>
 
       <div class="experience-grid">
@@ -765,23 +766,23 @@
             <span class="timeline-year">Now</span>
             <div class="timeline-body">
               <h3>Independent AI &amp; full-stack builds</h3>
-              <p>Built Near Wheels, BookLoop India, RAG Document Intelligence, the Multi-Agent AI System, and AI Marketing Agency. Also prototyped EV Charger Sharing and developed Open Competitor Lens.</p>
+              <p>Built a travel marketplace, a book exchange, an AI research tool, a document search app, and other AI projects.</p>
               <div class="tag-list tag-list-small"><span>Next.js</span><span>Python</span><span>Prisma</span><span>RAG</span></div>
             </div>
           </li>
           <li>
             <span class="timeline-year">Earlier</span>
             <div class="timeline-body">
-              <h3>Python backend foundations</h3>
-              <p>Built SmartSchool Management System, ATM Simulator, and small automation tools — role-based auth, CRUD, transaction history, and report generation.</p>
+              <h3>Learning to build with Python</h3>
+              <p>Built SmartSchool Management System, ATM Simulator, and small Python tools for sign-in, records, transactions, and reports.</p>
               <div class="tag-list tag-list-small"><span>Python</span><span>Flask</span><span>SQL</span></div>
             </div>
           </li>
           <li>
             <span class="timeline-year">Education</span>
             <div class="timeline-body">
-              <h3>Electrical engineering → software</h3>
-              <p>B.Tech in Electrical Engineering, JNTU (CGPA 6.89). Diploma in Electrical Engineering, SBTET (68%). The systems thinking carried over.</p>
+              <h3>From electrical engineering to software</h3>
+              <p>B.Tech in Electrical Engineering, JNTU (CGPA 6.89). Diploma in Electrical Engineering, SBTET (68%).</p>
             </div>
           </li>
         </ol>
@@ -789,7 +790,7 @@
         <aside class="experience-side reveal">
           <div class="side-card side-card-accent">
             <span class="side-label">What I'm looking for</span>
-            <p>AI engineering, full-stack product work, and teams building something useful — where I can own a problem end-to-end.</p>
+            <p>AI and web product work, where I can help build something useful from start to finish.</p>
             <a class="text-link" href="#contact">Get in touch <span aria-hidden="true">↗</span></a>
           </div>
           <div class="side-card">
@@ -797,7 +798,7 @@
             <ul class="evidence-list">
               <li><span>Near Wheels</span><b>73 routes · 79 tests</b></li>
               <li><span>Open Competitor Lens</span><b>1,124 tests</b></li>
-              <li><span>BookLoop India</span><b>RLS · atomic ledger</b></li>
+              <li><span>BookLoop India</span><b>Private accounts · tracked credits</b></li>
             </ul>
           </div>
         </aside>
@@ -808,8 +809,8 @@
       <div class="contact-grid">
         <div class="contact-copy reveal">
           <p class="eyebrow">Contact</p>
-          <h2 id="contact-title">Have an interesting problem to solve?</h2>
-          <p class="section-lead">I'm interested in AI engineering, full-stack product work, and teams building something useful. If you're working on agents, retrieval, or a product that needs to ship, I'd like to hear about it.</p>
+          <h2 id="contact-title">Have a product idea?</h2>
+          <p class="section-lead">I'm interested in building useful AI tools and web products. If your team has a product to improve or an idea to build, I'd like to hear about it.</p>
 
           <div class="contact-links">
             <a href="mailto:saipavankistamsetty@gmail.com">
@@ -922,7 +923,7 @@
         <header class="case-head">
           <p class="eyebrow">Case study · 01</p>
           <h2 id="case-near-wheels-title">Near Wheels</h2>
-          <p>A multi-sided mobility marketplace for India's road-transport and agri-services economy.</p>
+          <p>A single place to book rides, rentals, local services, and buses.</p>
           <div class="case-tags"><span>Next.js</span><span>TypeScript</span><span>Prisma</span><span>PostgreSQL</span><span>Gemini</span><span>Razorpay</span></div>
         </header>
 
@@ -935,22 +936,22 @@
         <div class="case-body">
           <div class="case-main">
             <h3>The problem</h3>
-            <p>Local transport and agri-services in India are fragmented across phone calls, WhatsApp groups, and offline providers. Customers need one place to compare and book; providers need a dashboard, a pricing path, and a payout flow.</p>
+            <p>Transport and farm services can be hard to find in one place. Customers often call several providers to compare options, while providers need an easier way to manage bookings and payments.</p>
 
             <h3>The approach</h3>
-            <p>Build a multi-sided marketplace around one auth system, one booking engine, one payment layer, and one admin panel. Seven verticals share the core: ride-sharing, vehicle rentals, garages, driving schools, drone spraying, farm services, and intercity buses. AI is used where it changes the experience — a natural-language budget trip planner.</p>
+            <p>I brought seven services into one marketplace: shared rides, vehicle rentals, garages, driving lessons, drone spraying, farm services, and intercity buses. People can compare options and book in one place. An AI trip planner can also suggest routes within a budget.</p>
 
-            <h3>Engineering challenges</h3>
+            <h3>How I made it reliable</h3>
             <ul>
-              <li><b>Concurrency-safe booking.</b> Booking creation runs inside a transaction with a <code>SELECT … FOR UPDATE</code> row lock, so the second request loses cleanly instead of double-booking.</li>
-              <li><b>Idempotent payments.</b> Razorpay webhooks replay, so settlement is idempotent, the captured amount is checked against the backend-computed total, and a refund only marks <code>REFUNDED</code> after the gateway accepts it.</li>
-              <li><b>Authorization that survives demotion.</b> Admin routes revalidate role and user status against the database on every request.</li>
-              <li><b>Spoof-resistant rate limiting.</b> The client IP is read from the rightmost <code>x-forwarded-for</code> entry, not the leftmost value an attacker can fake.</li>
-              <li><b>Upload validation.</b> Files are checked by magic bytes, then re-encoded to WebP with <code>sharp</code> and a graceful fallback.</li>
+              <li><b>Safe bookings.</b> The system reserves a time slot so two people cannot book the same service at once.</li>
+              <li><b>Checked payments.</b> Payments are matched to the booking total, and a refund is only marked complete after the payment service accepts it.</li>
+              <li><b>Secure admin access.</b> The server checks a person's role each time they use an admin tool.</li>
+              <li><b>Abuse protection.</b> Repeated requests are limited using trusted connection details.</li>
+              <li><b>Safer image uploads.</b> Images are checked and resized before they are saved.</li>
             </ul>
 
             <h3>What I built</h3>
-            <p>Full-stack design and implementation: schema, 73 API route handlers, auth, payments, provider/admin dashboards, the Gemini trip planner, 79 Vitest tests, and deployment configuration for Vercel, Docker, and Cloud Run.</p>
+            <p>I built the database, 73 server routes, sign-in, payments, provider and admin pages, the Gemini trip planner, 79 automated tests, and the setup for running the app online.</p>
           </div>
           <aside class="case-side">
             <div class="case-side-block"><span>Status</span><b>Private build</b><p>79 tests passing. Screenshots captured from the running app.</p></div>
@@ -969,13 +970,13 @@
         <header class="case-head">
           <p class="eyebrow">Case study · 02</p>
           <h2 id="case-bookloop-title">BookLoop India</h2>
-          <p>A credit-based book exchange marketplace for Indian readers.</p>
+          <p>A way for readers in India to trade books using credits instead of cash.</p>
           <div class="case-tags"><span>Next.js 16</span><span>React 19</span><span>Supabase</span><span>PostgreSQL</span><span>Zod</span></div>
         </header>
 
-        <div class="case-mock case-mock-bookloop">
+            <div class="case-mock case-mock-bookloop">
           <div class="mock mock-bookloop mock-large" aria-hidden="true">
-            <div class="mock-topbar"><span class="mock-logo">BookLoop<span>.</span></span><span class="mock-search">Search titles, authors, ISBN…</span><span class="mock-city">Kurnool</span></div>
+            <div class="mock-topbar"><span class="mock-logo">BookLoop<span>.</span></span><span class="mock-search">Search books or authors…</span><span class="mock-city">Kurnool</span></div>
             <div class="mock-bookloop-hero"><span class="mock-kicker">Exchange books, not cash</span><strong>Your next read is already on a shelf nearby.</strong><span class="mock-button">Browse books</span></div>
             <div class="mock-books"><div class="mock-book"><i></i><span>Atomic Habits</span><small>2 credits</small></div><div class="mock-book"><i class="book-b"></i><span>Deep Work</span><small>1 credit</small></div><div class="mock-book"><i class="book-c"></i><span>Ikigai</span><small>2 credits</small></div><div class="mock-book"><i class="book-d"></i><span>Wings of Fire</span><small>1 credit</small></div></div>
           </div>
@@ -984,21 +985,21 @@
         <div class="case-body">
           <div class="case-main">
             <h3>The problem</h3>
-            <p>Readers accumulate books they will not re-read, but resale is friction-heavy and cash pricing makes swaps awkward. A credit system can make exchange feel fair without turning every transaction into a negotiation.</p>
+            <p>Many readers have books they have finished, while someone nearby may want them. Credits make it easier to trade without agreeing on a cash price each time.</p>
 
             <h3>The approach</h3>
-            <p>Build a mobile-first marketplace around a credit ledger: list a book, request a book, reserve credits when an owner accepts, confirm handover, then move credits. The database — not the UI — enforces the rules.</p>
+            <p>Readers list a book, request another, and exchange it for credits. The app tracks those credits and updates them when an exchange is confirmed.</p>
 
-            <h3>Engineering challenges</h3>
+            <h3>How I kept exchanges fair</h3>
             <ul>
-              <li><b>Atomic exchange.</b> Credits are reserved with row locks when an owner accepts, so concurrent requests cannot overspend a wallet.</li>
-              <li><b>RLS and grants.</b> Supabase RLS policies protect profiles and listings; public column grants omit owner auth IDs.</li>
-              <li><b>Lifecycle correctness.</b> Rejection releases nothing because nothing was reserved; cancellation after acceptance releases the hold; disputes freeze the exchange for admin review.</li>
-              <li><b>Discovery and SEO.</b> Catalogue filters, city/category pages, thin-page noindex rules, sitemap generation, and structured data for books.</li>
+              <li><b>Safe credit transfers.</b> Credits are reserved when an owner accepts, so two requests cannot spend the same credits.</li>
+              <li><b>Private accounts.</b> Readers only see account and listing details they are allowed to see.</li>
+              <li><b>Clear exchange steps.</b> Declines, cancellations, and disputes each have a clear outcome.</li>
+              <li><b>Easy browsing.</b> Readers can filter by book and location, and search engines can find public book pages.</li>
             </ul>
 
             <h3>What I built</h3>
-            <p>The MVP end-to-end: migrations, RLS, server actions, auth, catalogue UI, wish lists, reviews, moderation, SEO, and deployment documentation.</p>
+            <p>I built the working first version, including the book catalogue, sign-in, wish lists, reviews, moderation tools, and setup notes.</p>
           </div>
           <aside class="case-side">
             <div class="case-side-block"><span>Status</span><b>MVP · private</b><p>Not connected to a live Supabase project or deployment yet. The honest boundary is documented.</p></div>
@@ -1015,16 +1016,16 @@
           <svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m6 6 12 12M18 6 6 18"/></svg>
         </button>
         <header class="case-head">
-          <p class="eyebrow">Additional case study</p>
+          <p class="eyebrow">Case study · 03</p>
           <h2 id="case-rag-title">Open Competitor Lens</h2>
-          <p>An evidence-backed research library where every claim must trace to a retrieved source.</p>
+          <p>A research tool that checks report claims against the original source text.</p>
           <div class="case-tags"><span>Python</span><span>ChromaDB</span><span>Pydantic</span><span>OpenAI</span><span>Gemini</span><span>Tavily</span><span>Firecrawl</span><span>Playwright</span></div>
         </header>
 
         <div class="case-mock case-mock-rag">
           <div class="mock mock-rag mock-large" aria-hidden="true">
-            <div class="mock-rag-head"><span class="mock-logo">Competitor Lens</span><span class="mock-pill">evidence required</span></div>
-            <div class="mock-rag-flow"><div class="rag-doc"><span>PDF</span><i></i><i></i><i class="short"></i></div><span class="rag-arrow">→</span><div class="rag-chunks"><span>chunk 01</span><span>chunk 02</span><span>chunk 03</span></div><span class="rag-arrow">→</span><div class="rag-vector"><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+            <div class="mock-rag-head"><span class="mock-logo">Competitor Lens</span><span class="mock-pill">source needed</span></div>
+            <div class="mock-rag-flow"><div class="rag-doc"><span>PDF</span><i></i><i></i><i class="short"></i></div><span class="rag-arrow">→</span><div class="rag-chunks"><span>Page 01</span><span>Page 02</span><span>Page 03</span></div><span class="rag-arrow">→</span><div class="rag-vector"><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
             <div class="mock-rag-answer"><span class="mock-check">✓</span><div><strong>Claim verified</strong><small>“$49/mo” found verbatim in source 3</small></div></div>
           </div>
         </div>
@@ -1032,25 +1033,25 @@
         <div class="case-body">
           <div class="case-main">
             <h3>The problem</h3>
-            <p>Most AI competitive-analysis tools produce fluent prose with decorative citations. The model states a price or growth rate, and the linked page says nothing of the sort. The number still reads as authoritative.</p>
+            <p>AI reports can sound confident even when a link does not support the claim. This library checks the source text before a claim appears in a report.</p>
 
             <h3>The approach</h3>
-            <p>Design against that failure mode: a claim may only appear in a report if a retrieved page contains it, and the quote attached to it appears verbatim in that page's stored text. Evidence records, a fact checker, and a quality gate enforce the rule.</p>
+            <p>Each claim must match text found on a source page. The report keeps a quote with the claim, so readers can check where it came from.</p>
 
-            <h3>Engineering decisions</h3>
+            <h3>How I check the sources</h3>
             <ul>
-              <li><b>Deterministic assembly.</b> Comparison, opportunity, evidence, report, and fact-check stages make zero model calls. A quality stage that asks a model to judge its own output is a model agreeing with itself.</li>
-              <li><b>Retrieval you can inspect.</b> A BM25 lexical index runs offline and deterministically; Chroma provides a persistent vector backend with per-company collections and score inversion handled correctly.</li>
-              <li><b>SSRF as a first-class concern.</b> Per-hop URL validation, browser route guards, blocked private ranges, and credential redaction in logs and error bodies.</li>
-              <li><b>Tests as documentation.</b> 1,124 tests, including a 133-case AST test that fails the build on a backwards dependency import.</li>
+              <li><b>Independent checks.</b> The system checks claims against saved source text instead of asking the same AI to verify its own answer.</li>
+              <li><b>Clear search results.</b> It finds matching words and related passages, and keeps the results available for review.</li>
+              <li><b>Safer website checks.</b> Links are checked before they are opened, and private network addresses are blocked.</li>
+              <li><b>Thorough checks.</b> 1,124 automated tests include rules that catch unsafe code changes.</li>
             </ul>
 
             <h3>What is built — and what is not</h3>
-            <p>The analysis library and its test suite are complete. The orchestrator, HTTP API, CLI, GraphRAG modules, and Docker image are not built yet. The repository is a public pre-alpha, and the README says so plainly.</p>
+            <p>The research library and its tests are ready. The part that runs the full workflow, plus the web API and command-line tool, are still future work. The public project is an early release.</p>
           </div>
           <aside class="case-side">
-            <div class="case-side-block"><span>Status</span><b>Public · pre-alpha</b><p>Library complete and tested. No runnable orchestrator yet.</p></div>
-            <div class="case-side-block"><span>Evidence</span><b>1,124 tests</b><p>Including a 133-case AST layering test.</p></div>
+            <div class="case-side-block"><span>Status</span><b>Public · early release</b><p>Research library and tests are ready; the full app is still in progress.</p></div>
+            <div class="case-side-block"><span>Evidence</span><b>1,124 tests</b><p>Checks that help catch mistakes before changes are released.</p></div>
             <div class="case-side-block"><span>Links</span><a class="text-link" href="https://github.com/saipavan-python/open-competitor-lens" target="_blank" rel="noopener noreferrer">GitHub repository <span aria-hidden="true">↗</span></a></div>
           </aside>
         </div>
@@ -1063,42 +1064,42 @@
           <svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m6 6 12 12M18 6 6 18"/></svg>
         </button>
         <header class="case-head">
-          <p class="eyebrow">Case study · 03</p>
+          <p class="eyebrow">Case study · 04</p>
           <h2 id="case-agents-title">Multi-Agent AI System</h2>
-          <p>A coordinated workflow of specialized agents for research, analysis, content creation, and reporting.</p>
+          <p>A group of AI helpers that research, review, write, and bring their work together.</p>
           <div class="case-tags"><span>Python</span><span>LangGraph</span><span>CrewAI</span><span>LangChain</span><span>OpenAI API</span><span>Gemini API</span></div>
         </header>
 
         <div class="case-mock case-mock-agents">
           <div class="mock mock-agents mock-large" aria-hidden="true">
-            <div class="agents-head"><span class="mock-logo">agent.run()</span><span class="mock-pill mock-pill-green">orchestrating</span></div>
+            <div class="agents-head"><span class="mock-logo">Task team</span><span class="mock-pill mock-pill-green">working together</span></div>
             <div class="agents-graph"><div class="agent-node agent-planner"><b>Research</b><small>gather findings</small></div><div class="agent-line"></div><div class="agent-node agent-research"><b>Analysis</b><small>find insights</small></div><div class="agent-line"></div><div class="agent-node agent-analyst"><b>Content</b><small>shape the response</small></div><div class="agent-line"></div><div class="agent-node agent-writer"><b>Reporting</b><small>consolidate output</small></div></div>
-            <div class="agents-output"><span>output.json</span><small>{ findings, analysis, response }</small></div>
+            <div class="agents-output"><span>Final report</span><small>findings · review · response</small></div>
           </div>
         </div>
 
         <div class="case-body">
           <div class="case-main">
             <h3>The problem</h3>
-            <p>Complex requests are easier to manage when work is split into clear responsibilities. This system coordinates specialist agents instead of relying on a single general-purpose response.</p>
+            <p>Large tasks can get messy when one AI tries to do everything. This project gives each helper a clear job and brings their work together.</p>
 
             <h3>The approach</h3>
-            <p>The workflow assigns research, analysis, content creation, and reporting to specialized agents. An orchestrator delegates work, carries context between steps, and processes the outputs into a consolidated result.</p>
+            <p>One helper gathers information, another reviews it, and others write and prepare a report. A central workflow passes the work from one step to the next.</p>
 
-            <h3>Engineering decisions</h3>
+            <h3>How the helpers work</h3>
             <ul>
-              <li><b>Defined roles.</b> Each agent has a focused responsibility and instructions.</li>
-              <li><b>Task delegation.</b> An orchestration layer coordinates specialized work.</li>
-              <li><b>LLM integrations.</b> OpenAI and Gemini APIs support language-model tasks.</li>
-              <li><b>Structured processing.</b> Agent outputs are organized into a usable final result.</li>
+              <li><b>Clear jobs.</b> Each helper has one task and its own instructions.</li>
+              <li><b>Work in order.</b> A central workflow sends results to the next step.</li>
+              <li><b>Model choices.</b> The system can use OpenAI or Gemini.</li>
+              <li><b>One clear result.</b> The final response follows a consistent format.</li>
             </ul>
 
             <h3>What I built</h3>
-            <p>Designed the agent roles, orchestration workflow, model integrations, and task-processing flow. This is an implemented and tested project, not a public production service.</p>
+            <p>I designed the helper roles, the order of work, and the connections to AI models. The project is built and tested, but it is not a public service.</p>
           </div>
           <aside class="case-side">
-            <div class="case-side-block"><span>Status</span><b>Implemented · tested</b><p>Private project with no public deployment.</p></div>
-            <div class="case-side-block"><span>Architecture</span><b>Input → orchestrator → agents</b><p>Specialized tasks → result processing → structured output.</p></div>
+            <div class="case-side-block"><span>Status</span><b>Built and tested</b><p>Private project with no public deployment.</p></div>
+            <div class="case-side-block"><span>How it works</span><b>Task → helpers → report</b><p>Research → review → writing → final result.</p></div>
             <div class="case-side-block"><span>Links</span><a class="text-link" href="mailto:saipavankistamsetty@gmail.com?subject=Multi-agent%20system%20walkthrough">Request a walkthrough <span aria-hidden="true">↗</span></a></div>
           </aside>
         </div>
@@ -1109,34 +1110,32 @@
       <div class="case-shell">
         <button class="icon-btn case-close" type="button" aria-label="Close case study" data-close-case><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m6 6 12 12M18 6 6 18"/></svg></button>
         <header class="case-head">
-          <p class="eyebrow">Case study · 04</p>
+          <p class="eyebrow">Case study · 05</p>
           <h2 id="case-doc-ai-title">RAG Document Intelligence</h2>
-          <p>Ask natural-language questions about PDF content with semantic retrieval and answers grounded in retrieved context.</p>
+          <p>Ask a question about a PDF and get an answer based on matching passages from the document.</p>
           <div class="case-tags"><span>Python</span><span>LangChain</span><span>ChromaDB</span><span>FAISS</span><span>OpenAI API</span><span>Gemini API</span><span>PyMuPDF</span><span>pdfplumber</span></div>
         </header>
-        <div class="case-mock case-mock-rag"><div class="mock mock-rag mock-large" aria-hidden="true"><div class="mock-rag-head"><span class="mock-logo">Document Intelligence</span><span class="mock-pill">retrieve · ground · answer</span></div><div class="mock-rag-flow"><div class="rag-doc"><span>PDF</span><i></i><i></i><i class="short"></i></div><span class="rag-arrow">→</span><div class="rag-chunks"><span>chunk 01</span><span>chunk 02</span><span>chunk 03</span></div><span class="rag-arrow">→</span><div class="rag-vector"><i></i><i></i><i></i><i></i><i></i><i></i></div></div><div class="mock-rag-answer"><span class="mock-check">✓</span><div><strong>Relevant context retrieved</strong><small>Ground the answer in document passages</small></div></div></div></div>
+        <div class="case-mock case-mock-rag"><div class="mock mock-rag mock-large" aria-hidden="true"><div class="mock-rag-head"><span class="mock-logo">Document Intelligence</span><span class="mock-pill">PDF · document search</span></div><div class="mock-rag-flow"><div class="rag-doc"><span>PDF</span><i></i><i></i><i class="short"></i></div><span class="rag-arrow">→</span><div class="rag-chunks"><span>Page 01</span><span>Page 02</span><span>Page 03</span></div><span class="rag-arrow">→</span><div class="rag-vector"><i></i><i></i><i></i><i></i><i></i><i></i></div></div><div class="mock-rag-answer"><span class="mock-check">✓</span><div><strong>Source found</strong><small>Matching text helps shape the answer</small></div></div></div></div>
         <div class="case-body">
           <div class="case-main">
             <h3>The problem</h3>
-            <p>Finding an answer in a long PDF often means reading and searching through many pages manually. This project makes document content easier to access through natural-language questions.</p>
+            <p>Finding one detail in a long PDF can take a lot of reading. This project lets people ask a question and find the pages that can answer it.</p>
             <h3>How it works</h3>
             <ol>
-              <li><b>Ingest.</b> Accept PDF documents for processing.</li>
-              <li><b>Extract.</b> Read document text with PyMuPDF and pdfplumber.</li>
-              <li><b>Chunk.</b> Split extracted text into smaller retrieval units.</li>
-              <li><b>Embed.</b> Convert chunks into vector representations.</li>
-              <li><b>Store.</b> Save vectors in ChromaDB or FAISS.</li>
-              <li><b>Retrieve.</b> Find semantically relevant passages for the question.</li>
-              <li><b>Answer.</b> Provide retrieved context to an LLM for a contextual response.</li>
+              <li><b>Read.</b> Extract text from a PDF.</li>
+              <li><b>Organize.</b> Split long documents into smaller passages.</li>
+              <li><b>Search.</b> Find passages that match the question.</li>
+              <li><b>Answer.</b> Use those passages to help write a response.</li>
+              <li><b>Check.</b> Keep the source passages available so readers can review them.</li>
             </ol>
-            <h3>Engineering challenges</h3>
-            <p>Document text quality, long files, chunk sizing, vector database integration, retrieval relevance, and connecting retrieved passages to answer generation.</p>
+            <h3>What took care</h3>
+            <p>PDFs can be long or hard to read. I had to split the text into useful sections and make sure search found the right passages.</p>
             <h3>My contribution</h3>
-            <p>Developed the document-processing and retrieval workflow, integrated embeddings and vector storage, and implemented LLM-based question answering.</p>
+            <p>I built the PDF reader, document search, and answer flow that connects each answer to the matching text.</p>
           </div>
           <aside class="case-side">
-            <div class="case-side-block"><span>Status</span><b>Implemented · tested</b><p>RAG document question-answering system.</p></div>
-            <div class="case-side-block"><span>Architecture</span><b>PDF → answer</b><p>Extraction → chunking → embeddings → vector search → LLM response.</p></div>
+            <div class="case-side-block"><span>Status</span><b>Built and tested</b><p>Ask a question about a PDF and review the source text.</p></div>
+            <div class="case-side-block"><span>How it works</span><b>PDF → answer</b><p>Read the file → find passages → write an answer.</p></div>
             <div class="case-side-block"><span>Models</span><b>OpenAI · Gemini</b><p>LLM integrations for contextual answer generation.</p></div>
           </aside>
         </div>
@@ -1147,33 +1146,33 @@
       <div class="case-shell">
         <button class="icon-btn case-close" type="button" aria-label="Close case study" data-close-case><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m6 6 12 12M18 6 6 18"/></svg></button>
         <header class="case-head">
-          <p class="eyebrow">Case study · 05</p>
+          <p class="eyebrow">Case study · 06</p>
           <h2 id="case-marketing-title">AI Marketing Agency</h2>
-          <p>A multi-agent workflow for marketing research, competitor analysis, content generation, creative direction, and reporting.</p>
+          <p>A planning tool for competitor research, content ideas, creative notes, and reports.</p>
           <div class="case-tags"><span>Python</span><span>LangChain</span><span>LangGraph</span><span>CrewAI</span><span>OpenAI API</span><span>Gemini API</span></div>
         </header>
-        <div class="case-mock case-mock-agents"><div class="mock mock-agents mock-large" aria-hidden="true"><div class="agents-head"><span class="mock-logo">campaign.flow()</span><span class="mock-pill mock-pill-green">research → report</span></div><div class="agents-graph"><div class="agent-node agent-planner"><b>Client</b><small>profile</small></div><div class="agent-line"></div><div class="agent-node agent-research"><b>Research</b><small>competitors</small></div><div class="agent-line"></div><div class="agent-node agent-analyst"><b>Content</b><small>campaign ideas</small></div><div class="agent-line"></div><div class="agent-node agent-writer"><b>Report</b><small>strategy</small></div></div><div class="agents-output"><span>marketing-brief</span><small>research · content · creative direction</small></div></div></div>
+        <div class="case-mock case-mock-agents"><div class="mock mock-agents mock-large" aria-hidden="true"><div class="agents-head"><span class="mock-logo">Campaign plan</span><span class="mock-pill mock-pill-green">brief → ideas → plan</span></div><div class="agents-graph"><div class="agent-node agent-planner"><b>Client</b><small>goals</small></div><div class="agent-line"></div><div class="agent-node agent-research"><b>Research</b><small>competitors</small></div><div class="agent-line"></div><div class="agent-node agent-analyst"><b>Content</b><small>campaign ideas</small></div><div class="agent-line"></div><div class="agent-node agent-writer"><b>Report</b><small>plan</small></div></div><div class="agents-output"><span>Campaign report</span><small>research · content · design</small></div></div></div>
         <div class="case-body">
           <div class="case-main">
             <h3>The workflow</h3>
-            <p>Client information flows through client analysis, competitor research, content strategy, creative direction, and a consolidated marketing report.</p>
-            <h3>Specialized agents</h3>
+            <p>The tool starts with a client brief, looks at competitors, suggests content and design ideas, then brings the results together in a report.</p>
+            <h3>What each helper does</h3>
             <ul>
-              <li><b>Client Profile Agent.</b> Processes business details and organizes client requirements.</li>
-              <li><b>Competitor Research Agent.</b> Researches competitors and organizes market-positioning findings.</li>
-              <li><b>Content Generation Agent.</b> Produces marketing content and social-media ideas.</li>
-              <li><b>Design Agent.</b> Turns creative requirements into design directions and briefs.</li>
-              <li><b>Reporting Agent.</b> Consolidates outputs into a structured report.</li>
+              <li><b>Client brief.</b> Collects the business goals and audience.</li>
+              <li><b>Competitor search.</b> Finds information about similar products.</li>
+              <li><b>Content ideas.</b> Suggests posts and campaign themes.</li>
+              <li><b>Creative notes.</b> Turns the brief into visual ideas.</li>
+              <li><b>Final report.</b> Puts all the work in one place.</li>
             </ul>
-            <h3>Engineering challenges</h3>
-            <p>Defining specialist roles, coordinating agent responsibilities, keeping outputs consistent, connecting research to content, and consolidating multiple responses.</p>
+            <h3>What I worked on</h3>
+            <p>I set up the helper roles and their order of work, connected the AI services, and made the results follow one clear format.</p>
             <h3>My contribution</h3>
-            <p>Worked on agent design, orchestration, prompt engineering, API integration, and marketing automation functionality.</p>
+            <p>I designed the helpers, wrote their instructions, connected the AI services, and built the marketing workflow.</p>
           </div>
           <aside class="case-side">
-            <div class="case-side-block"><span>Status</span><b>Implemented · tested</b><p>AI-assisted marketing workflow.</p></div>
-            <div class="case-side-block"><span>Architecture</span><b>Client → report</b><p>Client analysis → competitor research → content strategy → creative direction → report.</p></div>
-            <div class="case-side-block"><span>Orchestration</span><b>CrewAI · LangGraph</b><p>LangChain components with OpenAI and Gemini model integrations.</p></div>
+            <div class="case-side-block"><span>Status</span><b>Built and tested</b><p>A tool for planning research, content, and campaigns.</p></div>
+            <div class="case-side-block"><span>How it works</span><b>Brief → ideas → report</b><p>Client goals → competitor search → content and design ideas.</p></div>
+            <div class="case-side-block"><span>AI tools</span><b>CrewAI · LangGraph</b><p>LangChain with OpenAI and Gemini.</p></div>
           </aside>
         </div>
       </div>
@@ -1183,32 +1182,32 @@
       <div class="case-shell">
         <button class="icon-btn case-close" type="button" aria-label="Close case study" data-close-case><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m6 6 12 12M18 6 6 18"/></svg></button>
         <header class="case-head">
-          <p class="eyebrow">Case study · 06</p>
+          <p class="eyebrow">Case study · 07</p>
           <h2 id="case-ev-sharing-title">EV Charger Sharing Marketplace</h2>
-          <p>An India-focused peer-to-peer marketplace concept that helps drivers discover host-listed private charging infrastructure.</p>
+          <p>A marketplace idea for drivers to find and book home chargers listed by local hosts.</p>
           <div class="case-tags"><span>MobilityTech</span><span>EVTech</span><span>Marketplace prototype</span></div>
         </header>
-        <div class="case-mock case-mock-agents"><div class="ev-preview"><div class="ev-topline"><span class="ev-brand"><i aria-hidden="true">↯</i> charge.near</span><span class="ev-location">INDIA · NEARBY</span></div><div class="ev-map" aria-hidden="true"><span class="ev-road ev-road-a"></span><span class="ev-road ev-road-b"></span><span class="ev-road ev-road-c"></span><i class="ev-pin ev-pin-a">↯</i><i class="ev-pin ev-pin-b">↯</i><i class="ev-pin ev-pin-c">↯</i><span class="ev-you">YOU</span></div><div class="ev-listing"><span class="ev-plug">↯</span><span><b>Host-listed charger</b><small>Marketplace discovery prototype</small></span><span class="ev-arrow">↗</span></div></div></div>
+        <div class="case-mock case-mock-agents"><div class="ev-preview"><div class="ev-topline"><span class="ev-brand"><i aria-hidden="true">↯</i> charge.near</span><span class="ev-location">INDIA · NEARBY</span></div><div class="ev-map" aria-hidden="true"><span class="ev-road ev-road-a"></span><span class="ev-road ev-road-b"></span><span class="ev-road ev-road-c"></span><i class="ev-pin ev-pin-a">↯</i><i class="ev-pin ev-pin-b">↯</i><i class="ev-pin ev-pin-c">↯</i><span class="ev-you">YOU</span></div><div class="ev-listing"><span class="ev-plug">↯</span><span><b>Home charger nearby</b><small>Listed by a local host</small></span><span class="ev-arrow">↗</span></div></div></div>
         <div class="case-body">
           <div class="case-main">
             <h3>The idea</h3>
-            <p>Connect EV drivers with people who have available private charging infrastructure. The peer-to-peer sharing model aims to make charging access more convenient and improve use of existing chargers.</p>
-            <h3>Implemented prototype scope</h3>
+            <p>Help drivers find home chargers that local owners are willing to share. The idea makes it easier to find another place to charge.</p>
+            <h3>What the prototype does</h3>
             <ul>
               <li>Driver-facing charger discovery.</li>
               <li>Host and charger listing workflows.</li>
               <li>A marketplace booking experience.</li>
             </ul>
-            <h3>Future scope</h3>
-            <p>Live charger availability, hardware connectivity, charging-session monitoring, dynamic pricing, automated UPI payments, host earnings, and charger verification are potential extensions; they are not represented as implemented features.</p>
-            <h3>India-focused product considerations</h3>
-            <p>Host onboarding, charger compatibility, residential safety, local charging needs, and potential UPI support inform the product direction.</p>
+            <h3>What could come next</h3>
+            <p>Connecting to live chargers, showing whether they are free, tracking a charging session, and handling UPI payments are future ideas. They are not part of this prototype.</p>
+            <h3>Designed for India</h3>
+            <p>The product considers local hosts, charger types, home safety, and payment habits.</p>
             <h3>My contribution</h3>
-            <p>Explored the product architecture, built the marketplace prototype, and adapted the concept to the Indian EV ecosystem.</p>
+            <p>I planned the main screens, built the marketplace prototype, and shaped it around how drivers and hosts could use it in India.</p>
           </div>
           <aside class="case-side">
             <div class="case-side-block"><span>Status</span><b>Implemented prototype</b><p>Marketplace experience for discovering and listing chargers.</p></div>
-            <div class="case-side-block"><span>Architecture direction</span><b>Driver · host · admin</b><p>Discovery, listing management, booking, payments, and administration.</p></div>
+            <div class="case-side-block"><span>Who uses it</span><b>Drivers · hosts · admins</b><p>Find a charger, list one, or manage the marketplace.</p></div>
             <div class="case-side-block"><span>Technology</span><b>Not specified</b><p>The project notes did not identify the implemented technology stack.</p></div>
           </aside>
         </div>

@@ -5,7 +5,7 @@ Personal portfolio for AI engineering and full-stack work. The site is a static,
 ## What is here
 
 - Semantic single-page portfolio with dark and light themes
-- Six selected project case studies, plus a separate Open Competitor Lens case study
+- Seven project case studies, with alternating layouts and colors for each project
 - Responsive layouts from 360px to 1920px
 - Accessible keyboard navigation, focus states, and reduced-motion support
 - SEO metadata, JSON-LD, Open Graph image, sitemap, robots, and manifest
@@ -54,7 +54,7 @@ No build command is required. Commit the static files and push to `main`.
 ## Content notes
 
 - Near Wheels and BookLoop India are private builds. Their case studies describe verified implementation details and do not link to a public deployment.
-- Open Competitor Lens is labeled as public pre-alpha. The library and test suite are complete; the orchestrator, API, and CLI are not.
+- Open Competitor Lens is an early public release. Its research library and tests are ready; the full web service and command-line tool are still in progress.
 - The contact form does not submit to a server. It validates the fields and opens a pre-filled email draft.
 
 ## Contact
